@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import axios from 'axios';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   const [pokemonList, setPokemonList] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -50,7 +50,11 @@ const HomeScreen = () => {
           data={pokemonList}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
-            <TouchableOpacity style={styles.card}>
+            <TouchableOpacity
+              style={styles.card}
+              onPress={() =>
+                navigation.navigate('DetailScreen', {pokemon: item})
+              }>
               {item.imageUrl && (
                 <Image
                   source={{uri: item.imageUrl}}
