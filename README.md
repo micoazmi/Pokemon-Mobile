@@ -18,9 +18,7 @@ npm start
 yarn start
 ```
 
-if cant start try
-
-# using npm
+# if cant start try using npm install
 
 npm install
 
