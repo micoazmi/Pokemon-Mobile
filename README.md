@@ -20,7 +20,9 @@ yarn start
 
 # if cant start try using npm install
 
+```bash
 npm install
+```
 
 ## Step 2: Start your Application
 
