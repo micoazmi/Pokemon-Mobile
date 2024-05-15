@@ -56,4 +56,6 @@ This is one way to run your app — you can also run it directly from within And
 
 ![Home Section](images/home%20section.png 'Home Section Screenshot')
 
+## Detail Pokemon
+
 ![Detail Section](images/detail.png 'Detail Section Screenshot')
